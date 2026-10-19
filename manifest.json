@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "id": "djk.app-switch-overlay",
+  "name": "App Switch Overlay",
+  "version": "1.0.0",
+  "author": "Dan",
+  "description": "Brief, click-through app label when window focus changes.",
+  "kinds": ["service"],
+  "entryPoints": { "service": "Service.qml" }
+}
