@@ -27,3 +27,28 @@ function label(appId, title, entries) {
     }
     return id || "Application";
 }
+
+// Input is already restricted to the selected workspace by the shell model.
+// Group equal display names while retaining the focused app and window counts.
+function workspaceApps(windows, entries) {
+    var apps = [];
+    for (var i = 0; i < windows.length; i++) {
+        var window = windows[i];
+        var name = label(window.appId, window.title, entries);
+        var existing = null;
+        for (var j = 0; j < apps.length; j++) {
+            if (apps[j].name === name) { existing = apps[j]; break; }
+        }
+        if (existing) {
+            existing.count++;
+            existing.focused = existing.focused || !!window.focused;
+        } else {
+            apps.push({ name: name, count: 1, focused: !!window.focused });
+        }
+    }
+    apps.sort(function(a, b) {
+        if (a.focused !== b.focused) return a.focused ? -1 : 1;
+        return a.name.localeCompare(b.name);
+    });
+    return apps;
+}

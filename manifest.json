@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "id": "djk.app-switch-overlay",
   "name": "App Switch Overlay",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Dan",
-  "description": "Brief, click-through app label when window focus changes.",
+  "description": "Brief, click-through list of workspace apps, including windows behind fullscreen apps.",
   "kinds": ["service"],
   "entryPoints": { "service": "Service.qml" }
 }
