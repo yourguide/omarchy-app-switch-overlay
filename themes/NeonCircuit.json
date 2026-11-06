@@ -1,0 +1,14 @@
+{
+  "id": "neon-circuit",
+  "name": "Neon Circuit",
+  "description": "A luminous circuit powers up around your apps, scans on each switch, and quietly powers down.",
+  "panelAccent": "#55e6ff",
+  "settings": [
+    { "key": "tint", "label": "Circuit color", "type": "color", "default": "#55e6ff",
+      "help": "Leave empty to follow your Omarchy accent." },
+    { "key": "glow", "label": "Glow strength", "type": "number",
+      "default": 1, "min": 0, "max": 1.5, "step": 0.1, "decimals": 1, "suffix": "×" },
+    { "key": "traces", "label": "Circuit traces", "type": "bool", "default": true },
+    { "key": "scan", "label": "Electric scan", "type": "bool", "default": true }
+  ]
+}

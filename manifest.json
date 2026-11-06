@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
   "id": "djk.app-switch-overlay",
-  "name": "App Switch Overlay",
-  "version": "1.1.0",
+  "name": "Dynamic App Switch Overlay",
+  "version": "2.1.1",
   "author": "Dan",
-  "description": "Brief, click-through list of workspace apps, including windows behind fullscreen apps.",
-  "kinds": ["service"],
-  "entryPoints": { "service": "Service.qml" }
+  "description": "Brief, click-through list of workspace apps with themes, sounds, and a settings panel. Themes declare their own options.",
+  "kinds": [
+    "service"
+  ],
+  "entryPoints": {
+    "service": "Service.qml"
+  }
 }

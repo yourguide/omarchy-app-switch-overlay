@@ -1,0 +1,16 @@
+{
+  "id": "hulk-smash",
+  "name": "Hulk Smash",
+  "description": "A green fist slams the card down; a second fist punches through and it shatters.",
+  "qml": "HulkSmash.qml",
+  "panelAccent": "#7CFC00",
+  "settings": [
+    { "key": "shakeIntensity", "label": "Shake intensity", "type": "number",
+      "default": 1, "min": 0, "max": 3, "step": 0.1, "decimals": 1, "suffix": "×" },
+    { "key": "shardCount", "label": "Shards", "type": "choice", "default": 12,
+      "choices": [ { "label": "6", "value": 6 }, { "label": "12", "value": 12 }, { "label": "20", "value": 20 } ] },
+    { "key": "fist", "label": "Slam fist", "type": "bool", "default": true },
+    { "key": "cracksBuildUp", "label": "Cracks build up", "type": "bool", "default": true },
+    { "key": "punchThrough", "label": "Punch-through fist", "type": "bool", "default": true }
+  ]
+}

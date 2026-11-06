@@ -1,0 +1,12 @@
+{
+  "id": "base",
+  "name": "Base",
+  "description": "The original card: a quick slide-in swoosh in your Omarchy colors.",
+  "qml": "Base.qml",
+  "settings": [
+    { "key": "accentColor", "label": "Border color", "type": "color", "default": "",
+      "help": "Leave empty to follow your Omarchy accent color." },
+    { "key": "cornerRadius", "label": "Corner radius", "type": "number",
+      "default": 12, "min": 0, "max": 24, "step": 1, "decimals": 0, "suffix": " px" }
+  ]
+}
